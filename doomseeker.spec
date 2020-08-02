@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:		doomseeker
-Version:	1.3
+Version:	1.3.1
 Release:	1%{?dist}
 
 Group:		Amusements/Games
@@ -42,10 +42,10 @@ make install DESTDIR=%{buildroot}
 %{_datadir}/doomseeker/translations/*.qm
 %{_datadir}/doomseeker/translations/translations.def
 %{_datadir}/applications/org.drdteam.Doomseeker.desktop
-%{_datadir}/doc/doomseeker/LICENSE.json
+%{_docdir}/doomseeker/LICENSE-json             
 %{_libdir}/doomseeker/engines/*.so
 %{_libdir}/libwadseeker.so*
-%{_docdir}/wadseeker/LICENSE.json
+%{_docdir}/wadseeker/LICENSE-json
 %{_includedir}/wadseeker/*.h
 %{_includedir}/wadseeker/entities/*.h
 %{_includedir}/wadseeker/protocols/networkreplytimeouter.h
