@@ -11,7 +11,8 @@ URL:		https://doomseeker.drdteam.org
 
 Source0:	https://doomseeker.drdteam.org/files/doomseeker-%{version}.tar.xz
 BuildRequires: gcc-c++ cmake bzip2-devel
-BuildRequires:	qt5-qtbase-devel
+BuildRequires: qt5-qtbase-devel
+BuildRequires: qt5-linguist
 
 %description
 Doomseeker is a cross-platform server browser for Doom.
