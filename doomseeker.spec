@@ -46,7 +46,7 @@ GNU Public License v2.
 %setup -q
 
 %build
-%cmake .
+%cmake
 %cmake_build
 
 %install
