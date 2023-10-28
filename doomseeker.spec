@@ -1,5 +1,5 @@
 Name:           doomseeker
-Version:        1.3.3
+Version:        1.4.1
 Release:        1%{?dist}
 
 Summary:        Cross-platform server browser for Doom.
@@ -63,7 +63,7 @@ GNU Public License v2.
 
 %files -n wadseeker
 %license LICENSE
-%{_libdir}/libwadseeker.so.2.1.2
+%{_libdir}/libwadseeker.so.2.1.*
 
 %files -n wadseeker-devel
 %{_libdir}/libwadseeker.so
@@ -71,6 +71,9 @@ GNU Public License v2.
 %{_includedir}/wadseeker/
 
 %changelog
+* Sat Oct 28 2023 Jan Drögehoff <sentrycraft123@gmail.com> - 1.4.1-1
+- Update to 1.4.1
+
 * Sat Mar 26 2022 Jan Drögehoff <sentrycraft123@gmail.com> - 1.3.3-1
 - Update to 1.3.3
 
