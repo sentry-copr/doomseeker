@@ -1,6 +1,6 @@
 Name:           doomseeker
 Version:        1.4.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 
 Summary:        Cross-platform server browser for Doom.
 License:        GPLv2+
@@ -52,11 +52,14 @@ GNU Public License v2.
 %install
 %cmake_install
 
+mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/1024x1024/apps/
+mv %{buildroot}/%{_datadir}/icons/doomseeker.png %{buildroot}/%{_datadir}/icons/hicolor/1024x1024/apps/doomseeker.png
+
 %files
 %license LICENSE
 %{_bindir}/doomseeker
 %{_libdir}/doomseeker
-%{_datadir}/icons/doomseeker.png
+%{_datadir}/icons/hicolor/1024x1024/apps/doomseeker.png
 %{_datadir}/doomseeker/translations/*.qm
 %{_datadir}/doomseeker/translations/translations.def
 %{_datadir}/applications/org.drdteam.Doomseeker.desktop
@@ -71,6 +74,9 @@ GNU Public License v2.
 %{_includedir}/wadseeker/
 
 %changelog
+* Sun Jan 14 2024 Jan Drögehoff <sentrycraft123@gmail.com> - 1.4.1-2
+- Correct icon filesystem location
+
 * Sat Oct 28 2023 Jan Drögehoff <sentrycraft123@gmail.com> - 1.4.1-1
 - Update to 1.4.1
 
