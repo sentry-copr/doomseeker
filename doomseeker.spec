@@ -1,6 +1,6 @@
 Name:           doomseeker
-Version:        1.4.1
-Release:        2%{?dist}
+Version:        1.5.3
+Release:        1%{?dist}
 
 Summary:        Cross-platform server browser for Doom.
 License:        GPLv2+
@@ -66,7 +66,7 @@ mv %{buildroot}/%{_datadir}/icons/doomseeker.png %{buildroot}/%{_datadir}/icons/
 
 %files -n wadseeker
 %license LICENSE
-%{_libdir}/libwadseeker.so.2.1.*
+%{_libdir}/libwadseeker.so.2.2.*
 
 %files -n wadseeker-devel
 %{_libdir}/libwadseeker.so
@@ -74,6 +74,9 @@ mv %{buildroot}/%{_datadir}/icons/doomseeker.png %{buildroot}/%{_datadir}/icons/
 %{_includedir}/wadseeker/
 
 %changelog
+* Mon May 04 2026 Jan200101 <sentrycraft123@gmail.com> - 1.5.3-1
+- Update to 1.5.3
+
 * Sun Jan 14 2024 Jan Drögehoff <sentrycraft123@gmail.com> - 1.4.1-2
 - Correct icon filesystem location
 
